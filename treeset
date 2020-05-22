@@ -1,0 +1,142 @@
+  Program to create a new tree set, add some random numbers (Integer) and print out the tree set.
+ package com.treeset;
+
+import java.util.TreeSet;
+
+public class Newtree {
+
+	public static void main(String[] args) {
+		  TreeSet<String> tree_set = new TreeSet<String>();
+		  tree_set.add("10");
+		  tree_set.add("20");
+		  tree_set.add("30");
+		  tree_set.add("40");
+		  tree_set.add("50");
+		  System.out.println("Tree set: ");
+		  System.out.println(tree_set);
+
+	}
+
+}
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ Program to find the numbers less than 7 in a tree set
+package com.treeset;
+
+import java.util.Iterator;
+import java.util.TreeSet;
+
+public class lessthan {
+
+	public static void main(String[] args) {
+		  TreeSet <Integer>tree_num = new TreeSet<Integer>();
+		   TreeSet <Integer>treeheadset = new TreeSet<Integer>();
+		     
+		   // Add numbers in the tree
+		   tree_num.add(1);
+		   tree_num.add(2);
+		   tree_num.add(3);
+		   tree_num.add(5);
+		   tree_num.add(6);
+		   tree_num.add(7);
+		   tree_num.add(8);
+		   tree_num.add(9);
+		   tree_num.add(10);
+		     
+		 treeheadset = (TreeSet)tree_num.headSet(7);  
+
+		   Iterator iterator;
+		   iterator = treeheadset.iterator();
+		     
+		   //Displaying the tree set data
+		   System.out.println("Tree set data: ");     
+		   while (iterator.hasNext()){
+		   System.out.println(iterator.next() + " ");
+		   }
+		   }    
+
+	}
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ Program to get the element in a tree set which is greater than or equal to the given element.
+package com.treeset;
+
+import java.util.TreeSet;
+
+public class Greatertreeset {
+
+	public static void main(String[] args) {
+		  TreeSet <Integer>tree_num = new TreeSet<Integer>();
+		   TreeSet <Integer>treeheadset = new TreeSet<Integer>();
+		     
+		   // Add numbers in the tree
+		   tree_num.add(10);
+		   tree_num.add(20);
+		   tree_num.add(40);
+		   tree_num.add(50);
+		   tree_num.add(60);
+		   tree_num.add(70);
+		   tree_num.add(80);
+		   tree_num.add(76);
+		   tree_num.add(24);
+		   
+		   System.out.println("Greater than or equal to 78 : "+tree_num.ceiling(78));
+		   System.out.println("Greater than or equal to 49 : "+tree_num.ceiling(49));
+
+	}
+
+}
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ Program to retrieve and remove the last element of a tree set.
+
+package com.treeset;
+
+import java.util.TreeSet;
+
+public class Retrivetreeset {
+
+	public static void main(String[] args) {
+		 TreeSet <Integer>tree_num = new TreeSet<Integer>();
+		   TreeSet <Integer>treeheadset = new TreeSet<Integer>();
+		     
+		   // Add numbers in the tree
+		   tree_num.add(10);
+		   tree_num.add(40);
+		   tree_num.add(89);
+		   tree_num.add(99);
+		   tree_num.add(86);
+		   tree_num.add(79);
+		   tree_num.add(88);
+		   tree_num.add(99);
+		   tree_num.add(94);
+		   System.out.println("Original tree set: "+tree_num);
+		   System.out.println("Removes the first(lowest) element: "+tree_num.pollFirst());
+		   System.out.println("Tree set after removing first element: "+tree_num);
+
+	}
+
+}
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ Program to remove a given element from a tree set.
+package com.treeset;
+
+import java.util.TreeSet;
+
+public class remove {
+
+	public static void main(String[] args) {
+		   TreeSet <Integer>tree_num = new TreeSet<Integer>();
+		   TreeSet <Integer>treeheadset = new TreeSet<Integer>();
+		     
+		   // Add numbers in the tree
+		   tree_num.add(90);
+		   tree_num.add(40);
+		   tree_num.add(30);
+		   tree_num.add(60);
+		   tree_num.add(80);
+		   System.out.println("Original tree set: "+tree_num);
+		   System.out.println("Removes 30 from the list: "+tree_num.remove(30));
+		   System.out.println("Tree set after removing last element: "+tree_num);
+
+	}
+
+}
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
