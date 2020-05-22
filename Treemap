@@ -1,0 +1,105 @@
+ Program to iterate over all the entries in the HashMap.
+package hashmap;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class iterate {
+
+	public static void main(String[] args) {
+		Map<String, String> map = new HashMap<String, String>();
+		map.put("Sachin", "70");
+		map.put("Sagar", "60");
+		map.forEach((key,value) -> System.out.println(key + " = " + value));
+
+	}
+
+}
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ Program to test if a map contains a mapping for the specified value.
+package hashmap;
+
+import java.util.HashMap;
+
+public class testmap {
+
+	public static void main(String[] args) {
+		 HashMap < Integer, String > hash_map = new HashMap < Integer, String > ();
+		  hash_map.put(1, "Sachin");
+		  hash_map.put(2, "Sagar");
+		  hash_map.put(3, "Sureh");
+		  hash_map.put(4, "Shyam");
+		  hash_map.put(5, "Pritesh");
+		  // print the map
+		  System.out.println("The Original map: " + hash_map);
+		  System.out.println("1. Is value \'Sagar\' exists?");
+		  if (hash_map.containsValue("Sagar")) {
+		   //value exists
+		   System.out.println("Yes! ");
+		  } else {
+		   //value does not exists
+		   System.out.println("no!");
+		  }
+
+		  System.out.println("\n2. Is value \'suresh\' exists?");
+		  if (hash_map.containsValue("suresh")) {
+		   System.out.println("yes! - " );
+		  } else {
+		   System.out.println("No!");
+
+	}
+
+	}
+}
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+  Program to get a set view of the keys contained in this map.
+ package hashmap;
+
+import java.util.HashMap;
+import java.util.Set;
+
+public class setmap {
+
+	public static void main(String[] args) {
+		  HashMap<Integer,String> hash_map= new HashMap<Integer,String>();  
+		  
+		  hash_map.put(1,"Messi");
+		  hash_map.put(2,"Ronaldo");
+		  hash_map.put(3,"Dhoni");
+		  hash_map.put(4,"Shewag");
+		  hash_map.put(5,"Suresh");
+		  
+		  // get keyset value from map
+		   Set keyset = hash_map.keySet();
+		      
+		  // check key set values
+		   System.out.println("Key set values are: " + keyset);  
+
+	}
+
+}
+==============================================================================================================================================================
+ Program  to get a collection view of the values contained in this map
+  
+  package hashmap;
+
+import java.util.HashMap;
+
+public class collection {
+
+	public static void main(String[] args) {
+		  HashMap<Integer,String> hash_map= new HashMap<Integer,String>();  
+		    hash_map.put(1,"Messi");
+		  hash_map.put(2,"Dhoni");
+		  hash_map.put(3,"Sachin");
+		  hash_map.put(4,"Ronaldo");
+		       
+		   // checking collection view of the map
+		   System.out.println("Collection view is: "+ hash_map.values());
+
+	}
+
+}
