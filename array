@@ -1,0 +1,113 @@
+Program to create a new array list containing student names, add some student (string) and print out the collection. 
+
+package com.Arraylist;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Arraylist {
+
+	public static void main(String[] args) {
+		List<String> list_Strings = new ArrayList<String>();
+		  list_Strings.add("Sachin");
+		  list_Strings.add("Sagar");
+		  list_Strings.add("Abhishek");
+		  list_Strings.add("Akshay");
+		  list_Strings.add("Biswajit");
+		  System.out.println(list_Strings);
+		 }
+	  
+}
+
+
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Program to sort a given array list.example taking some fruit list
+
+package com.Arraylist;
+import java.util.*;
+public class sortarraylist {
+public static void main(String[] args) {
+	// Creae a list and add some Fruits to the list
+	List<String> list_Strings = new ArrayList<String>();
+	list_Strings.add("Apple");
+	list_Strings.add("Orange");
+	list_Strings.add("Mango");
+	list_Strings.add("Banana");
+	list_Strings.add("Watermelon");
+	System.out.println("List before sort: "+list_Strings);
+	Collections.sort(list_Strings);
+	System.out.println("List after sort: "+list_Strings);    
+}
+}	
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+
+Program to copy one array list into another.
+
+import java.util.*;
+  public class copyarray {
+  public static void main(String[] args) {
+  List<String> List1 = new ArrayList<String>();
+  List1.add("Sagar");
+  List1.add("Satya");
+  List1.add("Abhishek");
+  List1.add("Biswajit");
+  System.out.println("List1: " + List1);
+  List<String> List2 = new ArrayList<String>();
+  List2.add("Apple");
+  List2.add("Banana");
+  List2.add("Cat");
+  List2.add("Dog");
+  System.out.println("List2: " + List2);
+  // Copy List2 to List1
+  Collections.copy(List1, List2);
+  System.out.println("Copy List to List2,\nAfter copy:");
+  System.out.println("List1: " + List1);
+  System.out.println("List2: " + List2);
+ }
+}
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Program to reverse elements in a array list.
+
+import java.util.ArrayList;
+import java.util.Collections;
+
+public class reversearray {
+   public static void main(String[] args) {
+      ArrayList arrayList = new ArrayList();
+      arrayList.add("A");
+      arrayList.add("B");
+      arrayList.add("C");
+      arrayList.add("D");
+      arrayList.add("E");
+      System.out.println("Before Reverse Order: " + arrayList);
+      Collections.reverse(arrayList);
+      System.out.println("After Reverse Order: " + arrayList);
+   }
+}
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+*****To test an array list is empty or not.***
+import java.util.*;
+
+public class test {
+    public static void main(String[] args)
+    {
+      // Create an empty ArrayList.
+        ArrayList myArrayList = new ArrayList();
+		
+	 // Test whether the array is empty or not.
+        if (myArrayList.isEmpty())
+        {
+            System.out.println("The ArrayList is empty");
+        }
+        else
+        {
+            System.out.println("The ArrayList is not empty");
+        }
+    }
+}
