@@ -1,0 +1,144 @@
+Program to append the specified element to the end of a linked list.
+
+package com.linkedlist;
+
+import java.util.LinkedList;
+
+public class append {
+	 public static void main(String[] args) {
+	     // create an empty linked list
+	     LinkedList<String> l_list = new LinkedList<String>();
+	   // use add() method to add values in the linked list
+	          l_list.add("Sagar");
+	          l_list.add("Sachin");
+	          l_list.add("Abhishek");
+	          l_list.add("Yuraj");
+	          l_list.add("Dhoni");
+	          l_list.add("Shewag");
+		
+	   // print the list
+	   System.out.println("The linked list: " + l_list);
+	   }
+	}
+  
+  +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+  
+   to iterate through all elements in a linked list.
+package com.linkedlist;
+
+import java.util.Iterator;
+import java.util.LinkedList;
+
+public class iterate {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+				LinkedList<String> l_list = new LinkedList<String>();
+				   // use add() method to add values in the linked list
+				          l_list.add("Red");
+				          l_list.add("Green");
+				          l_list.add("Black");
+				          l_list.add("White");
+				          l_list.add("Pink");
+				// set Iterator at specified index
+				   Iterator p = l_list.listIterator(0);
+
+				   // print list from second position
+				   while (p.hasNext()) {
+				   System.out.println(p.next());
+			
+				   }
+			}
+
+	}
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Program  to display the elements and their positions in a linked list.
+package com.linkedlist;
+
+import java.util.LinkedList;
+
+public class position {
+
+	public static void main(String[] args) {
+	    // create an empty linked list
+	     LinkedList<String> l_list = new LinkedList<String>();
+	   // use add() method to add values in the linked list
+	          l_list.add("Sagar");
+	          l_list.add("Dhoni");
+	          l_list.add("Yuvraj");
+	          l_list.add("Abhishek");
+	          l_list.add("Biswajit");
+	      
+	      // print original list
+	   System.out.println("Original linked list:" + l_list);  
+	  for(int p=0; p < l_list.size(); p++)
+	   {
+	      System.out.println("Element at index "+p+": "+l_list.get(p));
+	    } 
+	 }
+
+	}
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+Program To remove all the elements from a linked list.
+package com.linkedlist;
+
+import java.util.LinkedList;
+
+public class remove {
+
+	public static void main(String[] args) {
+		  // create an empty linked list
+	     LinkedList<String> l_list = new LinkedList<String>();
+	   // use add() method to add values in the linked list
+	          l_list.add("Apple");
+	          l_list.add("Mango");
+	          l_list.add("Orange");
+	          l_list.add("Banana");
+	          l_list.add("Watermelon");
+	      
+	     // print the list
+	   System.out.println("The Original linked list: " + l_list);
+
+	  // Removing all the elements from the linked list
+	    l_list.clear();
+	 
+	    System.out.println("The New linked list: " + l_list);
+	  }
+
+	}
+  +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ Program  to join two linked lists.
+ 
+package com.linkedlist;
+
+import java.util.LinkedList;
+
+public class Jointwo {
+
+	public static void main(String[] args) {
+		  // create an empty linked list
+		  LinkedList <String> c1 = new LinkedList <String> ();
+		  
+		          c1.add("Yuvraj");
+		          c1.add("Dhoni");
+		          c1.add("Sachin");
+		          c1.add("Shewag");
+		          System.out.println("List of first linked list: " + c1);
+		         LinkedList <String> c2 = new LinkedList <String> ();
+		          c2.add("Messi");
+		          c2.add("Ronaldo");
+		          c2.add("Kaka");
+		          c2.add("Neymar");
+		          System.out.println("List of second linked list: " + c2);
+		        
+		      // Let join above two list
+		        LinkedList <String> a = new LinkedList <String> ();
+		        a.addAll(c1);
+		        a.addAll(c2);
+		        System.out.println("New linked list: " + a);
+		     }
+		}
+
+	
