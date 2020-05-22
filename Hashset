@@ -1,0 +1,131 @@
+ Program to add student names in a hash set.   
+
+package com.hashset;
+
+import java.util.HashSet;
+
+public class addhashset {
+
+	public static void main(String[] args) {
+		 // HashSet declaration
+	      HashSet<String> hset = 
+	               new HashSet<String>();
+
+	      // Adding elements to the HashSet
+	      hset.add("Sachin");
+	      hset.add("Sagar");
+	      hset.add("abhishek");
+	      hset.add("Akshay");
+	      hset.add("Ram");
+	      //Addition of duplicate elements
+	      hset.add("Sachin");
+	      hset.add("Sagar");
+	      //Addition of null values
+	      hset.add(null);
+	      hset.add(null);
+
+	      //Displaying HashSet elements
+	      System.out.println(hset);
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Program to append the specified element to the end of a hash set.
+
+package com.hashset;
+
+import java.util.HashSet;
+
+public class appendhash {
+
+	public static void main(String[] args) {
+		  // Create a empty hash set
+	     HashSet<String> h_set = new HashSet<String>();
+	
+	          h_set.add("Messi");
+	          h_set.add("Ronaldo");
+	          h_set.add("Kaka");
+	          h_set.add("Neymar");
+	          h_set.add("Luka");
+
+	   // print the hash set
+	   System.out.println("The Hash Set: " + h_set);
+
+	}
+
+}
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+	Program to iterate through all elements in a hash list
+  
+   package com.hashset;
+
+import java.util.HashSet;
+
+public class appendhash {
+
+	public static void main(String[] args) {
+	     HashSet<String> h_set = new HashSet<String>();
+	          h_set.add("Messi");
+	          h_set.add("Ronaldo");
+	          h_set.add("Kaka");
+	          h_set.add("Neymar");
+	          h_set.add("Luka");
+
+	   // print the hash set
+	   System.out.println("The Hash Set: " + h_set);
+
+	}
+  
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ Program to get the number of elements in a hash set.
+
+package com.hashset;
+
+import java.util.HashSet;
+
+public class gethashset {
+
+	public static void main(String[] args) {
+	     HashSet<String> h_set = new HashSet<String>();
+	          h_set.add("Red");
+	          h_set.add("Green");
+	          h_set.add("Black");
+	          h_set.add("White");
+	          h_set.add("Pink");
+	          h_set.add("Yellow");
+	    System.out.println("Original Hash Set: " + h_set);
+	    System.out.println("Size of the Hash Set: " + h_set.size());
+
+	}
+
+}
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Program to compare two sets and retain elements which are same on both sets.
+  
+  package com.hashset;
+
+import java.util.HashSet;
+
+public class comparehashset {
+
+	public static void main(String[] args) {
+        HashSet<String> h_set1 = new HashSet<String>();
+          h_set1.add("Messi");
+          h_set1.add("Ronald");
+          h_set1.add("Shewag");
+          h_set1.add("Sachin");
+          System.out.println("Frist HashSet content: "+h_set1);
+          HashSet<String>h_set2 = new HashSet<String>();
+          h_set2.add("Messi");
+          h_set2.add("Sagar");
+          h_set2.add("Shewag");
+          h_set2.add("Suresh");
+          System.out.println("Second HashSet content: "+h_set2);
+          h_set1.retainAll(h_set2);
+          System.out.println("HashSet content:");
+          System.out.println(h_set1);
+
+	}
+
+}
+
