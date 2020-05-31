@@ -1,0 +1,54 @@
+Program to get all keys from the given a Tree Map.
+ 
+ 
+ package treemap;
+
+import java.util.Set;
+import java.util.TreeMap;
+
+public class keytree {
+
+	public static void main(String[] args) {
+		   TreeMap<String,String> tree_map1=new TreeMap<String,String>();      
+		   // Put elements to the map 
+		  tree_map1.put("B1", "Boy");
+		  tree_map1.put("B2", "Cat");
+		  tree_map1.put("B3", "DOG");
+		  tree_map1.put("B4", "Ram"); 
+		    
+		 Set<String> keys = tree_map1.keySet();
+		        for(String key: keys){
+		            System.out.println(key);
+
+	}
+
+	}
+}
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Program to sort keys in Tree Map by using comparator
+ 
+ package treemap;
+
+import java.util.Comparator;
+import java.util.TreeMap;
+
+public class Sorttreemap {
+
+	public static void main(String[] args) {
+		TreeMap<String,String> tree_map1 = new TreeMap<String,String>(new sort_key());
+		   // Put elements to the map 
+		  tree_map1.put("B2", "Neymar");
+		  tree_map1.put("B3", "Dhoni");
+		  tree_map1.put("B1", "Messi");
+		  tree_map1.put("B4", "Ronaldo"); 
+		  System.out.println(tree_map1); 
+		    }
+		}
+		 class sort_key implements Comparator<String>{
+		     public int compare(String str1, String str2) {
+		        return str1.compareTo(str2);
+
+	}
+
+}
